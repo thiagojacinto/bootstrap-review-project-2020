@@ -1,0 +1,95 @@
+
+/* Circles Animation
+	Author: Vaibhav Arora
+	Link:		https://codepen.io/vaibhavarora/pen/xmpxjp
+*/
+
+animation-effect {
+	width: 150px;
+	height: 150px;
+	
+	margin: 10px 10px;
+		
+	position: relative;
+	display: block;
+}
+
+ripple-background {
+  background: #3C7A89;
+}
+
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  background: #DBC2CF;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #2E4756;
+}
+
+.small{
+  width: 50px;
+  height: 50px;
+  left: -25px;
+  bottom: -25px;
+}
+
+.medium{
+  width: 70px;
+  height: 70px;
+  left: -35px;
+  bottom: -35px;
+}
+
+.large{
+  width: 100px;
+  height: 100px;
+  left: -50px;
+  bottom: -50px;
+}
+
+.xlarge{
+  width: 150px;
+  height: 150px;
+  left: -75px;
+  bottom: -75px;
+}
+
+.xxlarge{
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.shade1{
+  opacity: 0.2;
+}
+.shade2{
+  opacity: 0.5;
+}
+
+.shade3{
+  opacity: 0.7;
+}
+
+.shade4{
+  opacity: 0.8;
+}
+
+.shade5{
+  opacity: 0.9;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
+  }
+  
+  50%{
+    transform: scale(1.2);
+  }
+  
+  100%{
+    transform: scale(0.8);
+  }
+}
