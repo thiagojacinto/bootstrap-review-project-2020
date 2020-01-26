@@ -10,3 +10,40 @@ img.foto {
 
   display: block;
 }
+
+.info-cards {
+  padding: 5em;
+}
+
+.info-cards .card img{
+  background-color: #f4a261;
+}
+
+.grow { 
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+}
+.grow:hover { 
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+
+}
+
+.fotos-carousel {
+  width: 60em;
+  max-height: 40em;
+ 
+  padding-bottom: 5em;
+}
+
+div.carousel-foto-caption {
+  background-color: #2a9d8f;
+  border-radius: 50%;
+ 
+}
