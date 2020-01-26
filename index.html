@@ -9,101 +9,160 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Thiago's CSS -->
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/bg-gradient-animated.css">
 
   <title>PE: Carnaval é aqui!</title>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-color-modifier">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top  bg-gradient-animated">
     <a class="navbar-brand" href="#">Carnavalizar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
-      <li class="nav-item ">
-        <a class="nav-link" href="/">Início </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#historia">História</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#news">Novidades</a>
-      </li>
-      <li class="nav-item dropdown active">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Blocos
-        <span class="sr-only">(current)</span>
-      </a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="./components/crea.html">Com CREA ou sem CREA, tamu na grea!</a>
-        <a class="dropdown-item" href="#">Amantes de Glória</a>
-      </div>
-    </li>
-  </ul>
-</div>
-</nav>
-
-
-<header>
-      <div class="jumbotron rounded-bottom shadow p-3 mb-5 rounded" style="background: #9FA2B2;">
-        <h1 class="display-5">Carnavalizar</h1>
-        <p class="lead">Organizando a brincadeira</p>
-        <hr class="my-4">
-        <p>Carnaval de Pernambuco é bom demais!</p>
-        <p class="lead">
-          <a class="btn btn-lg button-link" style="background: #D8DAD3; text-decoration: none; color: #2E4756" href="#"role="button"  target="_blank">
-            Saiba mais
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link" href="/">Início </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#historia">História</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#news">Novidades</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Blocos
+            <span class="sr-only">(current)</span>
           </a>
-        </p>
-      </div>
-      
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="./components/crea.html">Com CREA ou sem CREA, tamu na grea!</a>
+            <a class="dropdown-item" href="#">Amantes de Glória</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <header>
+    <div class="jumbotron rounded-bottom shadow p-3 mb-5 rounded" style="background: #9FA2B2;">
+      <h1 class="display-5">Carnavalizar</h1>
+      <p class="lead">Organizando a brincadeira</p>
+      <hr class="my-4">
+      <p>Carnaval de Pernambuco é bom demais!</p>
+      <p class="lead">
+        <a class="btn btn-lg button-link" style="background: #D8DAD3; text-decoration: none; color: #2E4756" href="#"
+          role="button" target="_blank">
+          Saiba mais
+        </a>
+      </p>
+    </div>
+
   </header>
 
-  <aside>
-    
-  </aside>
-
   <main>
+
+    <div class="fotos-carousel container">
+
+      <div id="slide-fotos" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#slide-fotos" data-slide-to="0" class="active"></li>
+          <li data-target="#slide-fotos" data-slide-to="1"></li>
+          <li data-target="#slide-fotos" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner rounded-sm">
+          <div class="carousel-item active">
+            <img src="./content/frevista-pulando.jpg" class="d-block w-100" alt="frevista pulando a noite">
+            <div class="carousel-caption d-none d-md-block carousel-foto-caption bg-gradient-animated">
+              <h5>Frevo ferve</h5>
+              <p>Carnaval em Pernambuco: de manhã, de tarde e de noite!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./content/bloco-kallina.jpg" class="d-block w-100" alt="estandarte do bloco kallinas">
+            <div class="carousel-caption d-none d-md-block carousel-foto-caption bg-gradient-animated text-white">
+              <h5>Blocos de rua</h5>
+              <p>A arte de ocupar toda a rua com a festa.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./content//estandarte-virgens-olinda.jpg" class="d-block w-100" alt="estandarte do bloco virgens de bairro novo">
+            <div class="carousel-caption d-none d-md-block carousel-foto-caption bg-gradient-animated text-white">
+              <h5>Irreverência olindense</h5>
+              <p>A cidade é palco para os mais diversos tipos de agremiações e troças.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#slide-fotos" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior / Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#slide-fotos" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo / Next</span>
+        </a>
+      </div>
+
+    </div>
 
     <div class="accordion" id="navegacao">
       <div class="card">
         <div class="card-header" id="historia">
           <h2 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#historia-texto" aria-expanded="true" aria-controls="historia-texto">
+            <button class="btn btn-link grow" type="button" data-toggle="collapse" data-target="#historia-texto"
+              aria-expanded="true" aria-controls="historia-texto">
               História
             </button>
           </h2>
         </div>
-    
-        <div id="historia-texto" class="collapse show text-justify" aria-labelledby="historia-texto" data-parent="#navegacao">
+
+        <div id="historia-texto" class="collapse show text-justify" aria-labelledby="historia-texto"
+          data-parent="#navegacao">
           <div class="card-body container">
-            
-            <p>O chamado Entrudo-selvagem chega ao Brasil com os portugueses e é ele o antecessor do nosso Carnaval. “Em Pernambuco,
-              a Igreja tinha interesse na conexão dessa festa à liturgia católica inclusive no intuito civilizá-la”. Diante do
-              fracasso, surgem medidas restritivas, todas, porém sem sucesso. É interessante observar que, desde o início, são dois
-              os tipos de entrudo: O das elites, nos espaços privados, e o do povo no espaço público onde ocorriam as batalhas,
+
+            <p>O chamado Entrudo-selvagem chega ao Brasil com os portugueses e é ele o antecessor do nosso Carnaval. “Em
+              Pernambuco,
+              a Igreja tinha interesse na conexão dessa festa à liturgia católica inclusive no intuito civilizá-la”.
+              Diante do
+              fracasso, surgem medidas restritivas, todas, porém sem sucesso. É interessante observar que, desde o
+              início, são dois
+              os tipos de entrudo: O das elites, nos espaços privados, e o do povo no espaço público onde ocorriam as
+              batalhas,
               ataques de água, pó e as famosas limas que nem sempre eram de cheiro.</p>
-            <p>Várias são as táticas para sua interdição, sem o sucesso pretendido, dessa forma as classes influentes iniciam uma
+            <p>Várias são as táticas para sua interdição, sem o sucesso pretendido, dessa forma as classes influentes
+              iniciam uma
               forte repressão através do Estado, proibindo o Entrudo e colocando-o sob a vigilância da polícia.</p>
-            <p>Surge uma nova proposta de modelo para a festa, baseado nos Carnavais Europeus que se caracterizavam pelo luxo,
-              máscaras, e ocorriam em salões da burguesia. No Brasil, a exemplo da Europa, a elite promovia seus Carnavais em
+            <p>Surge uma nova proposta de modelo para a festa, baseado nos Carnavais Europeus que se caracterizavam pelo
+              luxo,
+              máscaras, e ocorriam em salões da burguesia. No Brasil, a exemplo da Europa, a elite promovia seus
+              Carnavais em
               Casarões, teatros e salões onde se tocava polca, mazurca, e uma variedade de ritmos.</p>
             <img class="foto mx-auto" src="https://www.carnavalrecife.com/wp-content/uploads/2017/01/04639.jpg"
               alt="Jovem dançando frevo na rua">
-            <p>Aos poucos, grupos de mascarados vão tomando as ruas do centro da cidade, em carros abertos puxados por cavalos ou a
-              pé, a Mascarada já dominava os espaços fechados e os desfiles no espaço público. Para tanto, buscou retirar da
-              população em geral, o costume de dançarem nas ruas e usarem máscaras, sobretudo os negros que trouxeram essa prática
-              da África. As proibições do seu uso assim como, a ocupação das ruas acarretaram reações e perseguições diversas.</p>
-            <p>A partir de 1862, se inicia um período de organização da folia na rua, e após 1888, com a abolição da escravatura,
-              esse processo é ampliado. A insurgente classe trabalhadora se organiza em agrupamentos denominados Clubes e, promove
+            <p>Aos poucos, grupos de mascarados vão tomando as ruas do centro da cidade, em carros abertos puxados por
+              cavalos ou a
+              pé, a Mascarada já dominava os espaços fechados e os desfiles no espaço público. Para tanto, buscou
+              retirar da
+              população em geral, o costume de dançarem nas ruas e usarem máscaras, sobretudo os negros que trouxeram
+              essa prática
+              da África. As proibições do seu uso assim como, a ocupação das ruas acarretaram reações e perseguições
+              diversas.</p>
+            <p>A partir de 1862, se inicia um período de organização da folia na rua, e após 1888, com a abolição da
+              escravatura,
+              esse processo é ampliado. A insurgente classe trabalhadora se organiza em agrupamentos denominados Clubes
+              e, promove
               seus desfiles carnavalescos no espaço urbano.</p>
-            <p>É a origem das agremiações em sua diversidade, na cidade do Recife. Entre os associados desses clubes sobressaíam-se
-              o operariado urbano, pequenos comerciantes, vendedores ambulantes, jornaleiros, lavadeiras, costureiras, açougueiros e
+            <p>É a origem das agremiações em sua diversidade, na cidade do Recife. Entre os associados desses clubes
+              sobressaíam-se
+              o operariado urbano, pequenos comerciantes, vendedores ambulantes, jornaleiros, lavadeiras, costureiras,
+              açougueiros e
               vários prestadores de serviços.</p>
 
           </div>
@@ -112,7 +171,8 @@
       <div class="card">
         <div class="card-header" id="news">
           <h2 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#news-texto" aria-expanded="false" aria-controls="news-texto">
+            <button class="btn btn-link collapsed grow" type="button" data-toggle="collapse" data-target="#news-texto"
+              aria-expanded="false" aria-controls="news-texto">
               Novidades
             </button>
           </h2>
@@ -121,7 +181,8 @@
           <div class="card-body">
 
             <div class="list-group">
-              <a href="https://site.carnavalrecife.com/2020/01/24/blocos-de-pau-e-corda-afinam-o-passo-na-2a-noite-do-acerto-de-marcha-no-centro/" class="list-group-item list-group-item-action active">
+              <a href="https://site.carnavalrecife.com/2020/01/24/blocos-de-pau-e-corda-afinam-o-passo-na-2a-noite-do-acerto-de-marcha-no-centro/"
+                class="list-group-item list-group-item-action active">
                 <div class="d-flex w-100 justify-content-between" target="_blank">
                   <h5 class="mb-1">Pau e Corda</h5>
                   <small>24 de janeiro
@@ -131,7 +192,8 @@
                   de pau e corda afinam o passo na 2ª noite do acerto de marcha no Centro</p>
                 <small class="text-muted"> Marcha no Centro</small>
               </a>
-              <a href="https://site.carnavalrecife.com/2020/01/24/semana-repleta-de-folia-encantamento-e-alegria-com-atracoes-gratuitas-de-carnaval/" class="list-group-item list-group-item-action" target="_blank">
+              <a href="https://site.carnavalrecife.com/2020/01/24/semana-repleta-de-folia-encantamento-e-alegria-com-atracoes-gratuitas-de-carnaval/"
+                class="list-group-item list-group-item-action" target="_blank">
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">Atrações gratuitas</h5>
                   <small class="text-muted">24 de
@@ -140,15 +202,18 @@
                 <p class="mb-1">Semana repleta de folia, encantamento e alegria com atrações gratuitas de Carnaval</p>
                 <small class="text-muted">Atrações</small>
               </a>
-              <a href="https://site.carnavalrecife.com/2020/01/23/final-de-semana-tera-acerto-de-marcha-ensaios-de-maracatus-e-espetaculos-gratuitos-no-centro-e-zona-sul/" class="list-group-item list-group-item-action" target="_blank">
+              <a href="https://site.carnavalrecife.com/2020/01/23/final-de-semana-tera-acerto-de-marcha-ensaios-de-maracatus-e-espetaculos-gratuitos-no-centro-e-zona-sul/"
+                class="list-group-item list-group-item-action" target="_blank">
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">Final de semana na zona sul</h5>
                   <small class="text-muted">23 de janeiro de 2020</small>
                 </div>
-                <p class="mb-1">Final de semana terá acerto de marcha, ensaios de maracatus e espetáculos gratuitos no centro e Zona Sul</p>
+                <p class="mb-1">Final de semana terá acerto de marcha, ensaios de maracatus e espetáculos gratuitos no
+                  centro e Zona Sul</p>
                 <small class="text-muted">Fim de semana</small>
               </a>
-              <a href="https://site.carnavalrecife.com/2020/01/22/lirismo-dos-blocos-de-pau-e-corda-toma-conta-do-patio-de-sao-pedro-a-partir-de-amanha-23/" class="list-group-item list-group-item-action" target="_blank">
+              <a href="https://site.carnavalrecife.com/2020/01/22/lirismo-dos-blocos-de-pau-e-corda-toma-conta-do-patio-de-sao-pedro-a-partir-de-amanha-23/"
+                class="list-group-item list-group-item-action" target="_blank">
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">Pau e corda no dia 23</h5>
                   <small class="text-muted">22
@@ -158,7 +223,8 @@
                   dos Blocos de Pau e Corda toma conta do Pátio de São Pedro a partir de amanhã (23)</p>
                 <small class="text-muted">Lirismo no próximo 23</small>
               </a>
-              <a href="https://site.carnavalrecife.com/2020/01/22/aberto-o-credenciamento-de-imprensa-para-cobertura-do-carnaval-2020/" class="list-group-item list-group-item-action" target="_blank">
+              <a href="https://site.carnavalrecife.com/2020/01/22/aberto-o-credenciamento-de-imprensa-para-cobertura-do-carnaval-2020/"
+                class="list-group-item list-group-item-action" target="_blank">
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">Credenciamento da imprensa</h5>
                   <small class="text-muted">22 de janeiro de
@@ -175,6 +241,41 @@
     </div>
 
     </div>
+
+    <div class="info-cards">
+    
+      <div class="row row-cols-2 row-cols-md-3">
+        <div class="col mb-4">
+          <div class="card grow">
+            <img src="https://www.penocarnaval.com.br/assets/images/cidades.png" class="card-img-top" alt="mosteiro de são bento em Olinda">
+            <div class="card-body">
+              <h5 class="card-title">Cidades</h5>
+              <p class="card-text">Quais as peculiaridades do Carnaval pernambucano em cada uma das suas cidades? Descubra!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card grow">
+            <img src="https://www.penocarnaval.com.br/assets/images/artistas.png" class="card-img-top" alt="Alceu Valença cantando no carnaval">
+            <div class="card-body">
+              <h5 class="card-title">Artistas</h5>
+              <p class="card-text">As personalidades que enaltecem a cultura pernambucana por todo o mundo estão aqui.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card grow">
+            <img src="https://www.penocarnaval.com.br/assets/images/musicas.png" class="card-img-top" alt="Trompetista em foco">
+            <div class="card-body">
+              <h5 class="card-title">Músicas</h5>
+              <p class="card-text">As canções que superam as gerações e nunca falta na folia Pernambucana.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+            
   </main>
   <footer>
 
@@ -182,11 +283,14 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
