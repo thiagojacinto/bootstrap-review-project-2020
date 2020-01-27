@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap-review-project-2020",
+  "version": "1.0.0",
+  "description": "Web-site project solution using Bootstrap4 & Javascript. Task proposed by [Module6](https://github.com/thiagojacinto/pos-unit-porto/tree/master/Module6) of post-grad-course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagojacinto/bootstrap-review-project-2020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagojacinto/bootstrap-review-project-2020/issues"
+  },
+  "homepage": "https://github.com/thiagojacinto/bootstrap-review-project-2020#readme"
+}
