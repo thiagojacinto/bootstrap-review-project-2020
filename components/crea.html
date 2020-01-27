@@ -10,12 +10,50 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+  <!-- Thiago's CSS -->
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/blocos.css">
+  <link rel="stylesheet" href="../styles/bg-gradient-animated.css">
+  <link rel="stylesheet" href="../styles/animation.css">
 
   <title>Bloco: Com Crea Ou Sem Crea, Tamu na Grea</title>
 </head>
 
-<header>
-  <div class="jumbotron bg-secondary rounded">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-gradient-animated">
+  <a class="navbar-brand" href="../index.html">Carnavalizar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item ">
+        <a class="nav-link" href="../index.html">Início </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#historia">História</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#news">Novidades</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Blocos
+          <span class="sr-only">(current)</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="crea.html">Com CREA ou sem CREA, tamu na grea!</a>
+          <a class="dropdown-item" href="gloria.html">Amantes de Glória</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<header class="container">
+  <div class="jumbotron bg-secondary rounded tracking-in-contract-bck">
     <h1 class="display-5">ComCREAouSemCREATamuNaGrea</h1>
     <p class="lead">Blocado ou não, venha brincar com a gente!</p>
     <hr class="my-4">
