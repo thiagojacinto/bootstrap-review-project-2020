@@ -1,0 +1,16 @@
+.bg-image-crea {
+  background-image: url(../content/crea-boneco.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 60em;
+  height: 40em;
+}
+
+.card-title {
+  padding: 2em;
+}
+
+.maps-view {
+  padding: 1em;
+}
