@@ -2,6 +2,11 @@
   background-color: #16262E;
 }
 
+.bg-image {
+  background-image: url(../content/confetti-bg.jpg);
+  background-repeat: repeat;
+}
+
 img.foto {
   width: auto;
   height: 50vw;
@@ -46,4 +51,27 @@ div.carousel-foto-caption {
   background-color: #2a9d8f;
   border-radius: 50%;
  
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    width: 100%;
+  }
+
+  .fotos-carousel {
+    width: 90vw;
+    height: auto;
+  }
+
+  .info-cards {
+    padding: .7em;
+  }
+
+  .maps-view iframe {
+    width: 2vw;
+    height: 4vw;
+    
+    padding: 0;
+    margin: 0;
+  }
 }
