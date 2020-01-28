@@ -11,6 +11,12 @@
   padding: 2em;
 }
 
-.maps-view {
+.maps-view iframe {
   padding: 1em;
+  width: 400px;
+  height: 300px;
+}
+
+.register-start {
+  padding: 2em 0;
 }
