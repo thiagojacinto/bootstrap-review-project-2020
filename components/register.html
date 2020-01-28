@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Thiago's CSS -->
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/blocos.css">
+  <link rel="stylesheet" href="../styles/bg-gradient-animated.css">
+  <link rel="stylesheet" href="../styles/animation.css">
+
+  <title>Cadastre seu bloco</title>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-gradient-animated">
+  <a class="navbar-brand" href="../index.html">Carnavalizar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item ">
+        <a class="nav-link" href="../index.html">Início </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#historia">História</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#news">Novidades</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Blocos
+          <span class="sr-only">(current)</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="crea.html">Com CREA ou sem CREA, tamu na grea!</a>
+          <a class="dropdown-item" href="gloria.html">Amantes de Glória</a>
+          <a class="dropdown-item text-muted" href="#">Cadastre um novo bloco</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <div class="register-start container">
+
+    <div class="card text-center">
+      <div class="card-header">
+        Cadastre seu próprio bloco ou agremiação
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Cadastro</h5>
+        <p class="card-text">Preenchendo um formulário simples você mesmo pode cadastrar seu próprio bloco ou agremiação carnavalesca que desfila ou se reúne durante o Carnaval Pernambucano.</p>
+        
+      </div>
+      <div class="card-footer text-muted">
+        Compartilhe sua alegria conosco!
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<body>
+
+  <main>
+
+    <div class="register-form container">
+
+      <form>
+        <div class="form-row">
+          <div class="col">
+            <label for="Nome">Nome:</label>
+            <input type="text" class="form-control" >
+          </div>
+          <div class="col">
+            <label for="Sobrenome">Sobrenome:</label>
+            <input type="text" class="form-control" >
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">E-mail:</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputTelefone">Telefone:</label>
+            <input type="text" class="form-control" id="inputTelefone4">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputNomeDoBloco">Nome do Bloco:</label>
+            <input type="text" class="form-control" id="inputNomeDoBloco">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputLocalBloco">Sede / Local de saída:</label>
+            <input type="text" class="form-control" id="inputLocalBloco4">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Endereço:</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Ex: Rua do Sol, 90">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Cidade:</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">Estado:</label>
+            <select id="inputState" class="form-control">
+              <option selected>- - Escolha um estado - -</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">CEP:</label>
+            <input type="text" class="form-control" id="inputCEP">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Dono do bloco
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn bg-gradient-animated shadow-pop-tr">Cadastrar bloco</button>
+      </form>
+
+    </div>
+
+  </main>
+
+</body>
