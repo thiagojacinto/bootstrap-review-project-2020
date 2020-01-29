@@ -8,7 +8,7 @@
 }
 
 .card-title {
-  padding: 2em;
+  padding: 1em;
 }
 
 .maps-view iframe {
@@ -18,5 +18,15 @@
 }
 
 .register-start {
-  padding: 2em 0;
+  padding-top: 3em;
+}
+
+.embed-responsive, .embeded-video iframe {
+  max-width: 560px;
+  max-height: 315px;
+}
+
+.register-form {
+  padding-top: 3em;
+  padding-bottom: 10em;
 }
