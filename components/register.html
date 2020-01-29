@@ -64,9 +64,15 @@
         <h5 class="card-title">Cadastro</h5>
         <p class="card-text">Preenchendo um formulário simples você mesmo pode cadastrar seu próprio bloco ou agremiação carnavalesca que desfila ou se reúne durante o Carnaval Pernambucano.</p>
         
+        <div class="embeded-video container embed-responsive embed-responsive-16by9">
+          
+          <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/VgjbIpDjfXY" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        </div>
       </div>
-      <div class="card-footer text-muted">
-        Compartilhe sua alegria conosco!
+      <div class="card-footer bg-gradient-animated">
+        <strong>Compartilhe sua alegria conosco!</strong>
       </div>
     </div>
 
@@ -81,13 +87,15 @@
 
       <form>
         <div class="form-row">
-          <div class="col">
+          <div class="form-group col-md-6">
             <label for="Nome">Nome:</label>
-            <input type="text" class="form-control" >
+            <input type="text" class="form-control" 
+            id="inputNome4">
           </div>
-          <div class="col">
+          <div class="form-group col-md-6">
             <label for="Sobrenome">Sobrenome:</label>
-            <input type="text" class="form-control" >
+            <input type="text" class="form-control" 
+            id="inputSobrenome4">
           </div>
         </div>
         <div class="form-row">
@@ -110,10 +118,6 @@
             <input type="text" class="form-control" id="inputLocalBloco4">
           </div>
         </div>
-        <div class="form-group">
-          <label for="inputAddress">Endereço:</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Ex: Rua do Sol, 90">
-        </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputCity">Cidade:</label>
@@ -123,19 +127,58 @@
             <label for="inputState">Estado:</label>
             <select id="inputState" class="form-control">
               <option selected>- - Escolha um estado - -</option>
-              <option>...</option>
-            </select>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+              <option value="EX">* Estrangeiro</option>
+              </select>
           </div>
-          <div class="form-group col-md-2">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputAddress">Endereço:</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Ex: Rua do Sol, 90">
+          </div>
+          <div class="form-group col-md-4">
             <label for="inputZip">CEP:</label>
             <input type="text" class="form-control" id="inputCEP">
           </div>
         </div>
         <div class="form-group">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
+            <input class="form-check-input" type="radio" id="radioOption1"  name="radioButton" name="radioOption1">
+            <label class="form-check-label" for="radioOption1">
               Dono do bloco
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="radioOption2"  name="radioButton" name="radioOption2">
+            <label class="form-check-label" for="radioOption2">
+              Folião
             </label>
           </div>
         </div>
@@ -146,4 +189,17 @@
 
   </main>
 
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+   
+
+    <!--  JS from bootstrap installed via npm -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
+</html>
