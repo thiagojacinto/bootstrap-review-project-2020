@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -9,14 +10,14 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  
+
   <!-- Thiago's CSS -->
   <link rel="stylesheet" href="../styles/main.css">
   <link rel="stylesheet" href="../styles/blocos.css">
   <link rel="stylesheet" href="../styles/bg-gradient-animated.css">
   <link rel="stylesheet" href="../styles/animation.css">
 
-  <title>Bloco: Amantes da Gloria</title>
+  <title>Bloco: Amantes de Gloria</title>
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-gradient-animated">
@@ -37,7 +38,7 @@
         <a class="nav-link" href="../index.html#news">Novidades</a>
       </li>
       <li class="nav-item dropdown active">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown-menu"
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
           Blocos
           <span class="sr-only">(current)</span>
@@ -45,15 +46,116 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="crea.html">Com CREA ou sem CREA, tamu na grea!</a>
           <a class="dropdown-item" href="gloria.html">Amantes de Glória</a>
-          <a class="dropdown-item text-muted" href="./components/register.html">Cadastre um novo bloco</a>
+          <a class="dropdown-item text-muted" href="register.html">Cadastre um novo bloco</a>
         </div>
       </li>
     </ul>
   </div>
 </nav>
 
-<body>
-  
-</body>
+<header>
+  <div class="jumbotron rounded tracking-in-contract-bck ">
+    <h1 class="display-5 ">Amantes de Glória</h1>
+    <p class="lead">Uma história de cinema</p>
+    <hr class="my-4">
+    <p>Carnaval de Pernambuco é bom demais!</p>
+    <p class="lead">
+      <a class="btn btn-lg active shadow-pop-tr bg-gradient-animated" href="#" role="button" data-toggle="modal" data-target="#more" target="_blank">Saiba mais</a>
+    </p>
+  </div>
+
+  <div class="bootstrap-modal">
+    <div class="modal fade" id="more" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Bloco: "Amantes de Glória"</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Tudo começou em 1997, quando um grupo de amigos começou a se reunir às segundas-feiras para assistir filmes no antigo cinema Veneza. Depois da sessão, os estudantes de jornalismo iam tomar chope no bar Stiletto, localizado no bairro da Boa Vista. </p>
+
+            <p>Em numa dessas idas ao cinema, eles conheceram Glória, personagem interpretada pela atriz espanhola Victoria Abril, no filme “Ninguém Falará de Nós Quando Estivermos Mortos" (1995). Apaixonados, em uma das conversas que aconteciam no bar, eles decidiram fundar uma confraria chamada "Amantes de Glória", em homenagem à personagem. Logo após, essa confraria acabou virando bloco de carnaval. </p>
+
+            <p>Segundo os diretores do bloco, a cor verde foi para alegrar e representar a esperança. Tradicionalmente, Glória desfila pelas ruas do Recife na segunda-feira de carnaval, arrastando vários foliões com o seu hino...</p>
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn btn-secondary shadow-pop-tr"
+              href="https://www.penocarnaval.com.br/noticias/detalhe/amantes-de-gloria-uma-historia-de-cinema" target="_blank">Mais...</a>
+            <button type="button" class="btn btn-success" data-dismiss="modal">Voltar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</header>
+
+<body class="bg-image">
+
+  <div class="info-cards">
+
+    <div class="card text-center">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="fechada-tab" data-toggle="tab" role="tab" aria-controls="previa-fechada"
+              aria-selected="true" href="#previa-fechada">Prévia Fechada</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="aberta-tab" data-toggle="tab" role="tab" aria-controls="previa-aberta"
+              aria-selected="false" href="#previa-aberta">Prévia aberta</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Próximos eventos</a> -->
+          </li>
+        </ul>
+      </div>
+
+      <h4 class="card-title">Amantes de Glória</h4>
+      <div class="tab-content" id="myTabContent">
+        <div class="card-body tab-pane fade show active" id="previa-fechada" role="tabpanel"
+          aria-labelledby="fechada-tab">
+          <p class="card-text">Adicione este animadíssimo bloco aos seus favitos</p>
+          <a href="#" class="btn bg-gradient-animated grow">Vem carnavalizar!</a>
+          <h5 class="card-title">20/01/2020 às 18h</h5>
+          <a href="#" class="btn bg-gradient-animated grow">INGRESSOS</a>
+          <div>
+            <p class="card-text text-muted">Ah, que pena, essa data já passou.</p>
+          </div>
+        </div>
+
+        <div class="card-body tab-pane fade " id="previa-aberta" role="tabpanel" aria-labelledby="aberta-tab">
+          <p class="card-text text-muted">A prévia aberta está marcada no endereço: Rua Gen. Joaquim Inácio, 91 - Ilha do Leite, Recife. Compareça!</p>
+          <h5 class="card-title">Próxima: 16/02/2020 às 15h</h5>
+          <a href="#" class="btn bg-gradient-animated grow">Agendar</a>
+
+          <!-- Mapa -->
+          <div class="container maps-view">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.3739009577976!2d-34.89476278451238!3d-8.06329038280562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18c5ac5a27bb%3A0x726e77ff8c93da72!2sR.%20Gen.%20Joaquim%20In%C3%A1cio%2C%20199-91%20-%20Ilha%20do%20Leite%2C%20Recife%20-%20PE%2C%2050070-270!5e0!3m2!1spt-BR!2sbr!4v1580263572083!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+   
+    <!--  JS from bootstrap installed via npm -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
 
 </html>
