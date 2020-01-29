@@ -3,7 +3,14 @@
 }
 
 .bg-image {
-  background-image: url(../content/confetti-bg.jpg);
+  background: 
+    linear-gradient(
+      rgba(229,89,52,0.4),
+      rgba(155,197,61,0.6),
+      rgba(253,231,76,0.3),
+      rgba(91,192,235,0.5)
+    ),
+    url(../content/confetti.gif);
   background-repeat: repeat;
 }
 
@@ -17,11 +24,17 @@ img.foto {
 }
 
 .info-cards {
-  padding: 5em;
+  padding-top: 5em;
+  padding-bottom: 10em;
 }
 
 .info-cards .card img{
-  background-color: #f4a261;
+  background: 
+    linear-gradient(
+      rgba(229,89,52,0.4),
+      rgba(253,231,76,0.3),
+      rgba(91,192,235,0.5)
+    )
 }
 
 .grow { 
@@ -50,6 +63,10 @@ div.carousel-foto-caption {
   background-color: #2a9d8f;
   border-radius: 50%;
  
+}
+
+#navegacao {
+  padding-bottom: 5em;
 }
 
 @media screen and (max-width: 640px) {
