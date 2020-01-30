@@ -10,7 +10,7 @@
       rgba(253,231,76,0.3),
       rgba(91,192,235,0.5)
     ),
-    url(../content/confetti.gif);
+    url(../content/confetti-resized.gif);
   background-repeat: repeat;
 }
 
@@ -24,7 +24,7 @@ img.foto {
 }
 
 .info-cards {
-  padding-top: 5em;
+  padding: 5em;
   padding-bottom: 10em;
 }
 
