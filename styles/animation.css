@@ -137,3 +137,28 @@
             transform: translateX(-8px) translateY(8px);
   }
 }
+
+/* 
+  ANIMATION COLOR RADIENT ANIMATION
+  Author: Chris Coyier (https://codepen.io/chriscoyier
+*/
+
+.gradient-transition {
+  background: linear-gradient(
+    -30deg,
+    rgba(155,197,61,1),
+    rgba(91,192,235,1),
+    rgba(253,231,76,1),
+    rgba(229,89,52,1)
+  );
+  background-size: 100% 200%;
+  
+  transition: background-position 0.8s ease-in-out;
+  -o-transition: background-position 0.8s ease-in-out;
+  -moz-transition: background-position 0.8s ease-in-out;
+  -webkit-transition: background-position 0.8s ease-in-out;
+}
+
+.gradient-transition:hover {
+  background-position: 0 100%;
+}
