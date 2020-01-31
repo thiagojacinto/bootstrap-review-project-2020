@@ -5,10 +5,10 @@
 .bg-image {
   background: 
     linear-gradient(
-      rgba(229,89,52,0.4),
+      /* rgba(229,89,52,0.4), */
       rgba(155,197,61,0.6),
-      rgba(253,231,76,0.3),
       rgba(91,192,235,0.5)
+      /* rgba(253,231,76,0.3) */
     ),
     url(../content/confetti-resized.gif);
   background-repeat: repeat;
@@ -62,14 +62,40 @@ img.foto {
 div.carousel-foto-caption {
   background-color: #2a9d8f;
   border-radius: 50%;
- 
 }
 
 #navegacao {
   padding-bottom: 5em;
 }
 
+.reference p {
+  font-size: 0.8em;
+  color: rgb(88, 88, 88)
+}
+
+header img {
+  width: 13em;
+  height: 13em;
+
+  position: absolute;
+  display: block;
+  left: 70%;
+  top: 3%;
+}
+
 @media screen and (max-width: 640px) {
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  header img {
+    width: 8em;
+    height: 8em;
+
+    top: 4%
+  }
+
   .container {
     width: 100%;
   }
@@ -81,6 +107,7 @@ div.carousel-foto-caption {
 
   .info-cards {
     padding: .7em;
+    padding-bottom: 4em;
   }
 
   .maps-view iframe {
