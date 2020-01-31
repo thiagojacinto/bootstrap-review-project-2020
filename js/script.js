@@ -1,5 +1,5 @@
 // Javascript Main file
-// Author: Thiago Jacinto @ 2020
+// Author: Thiago Jacinto e Cícero Oliveira @ 2020
 
 // Localstorage usage:
 // first save the saved items into this variable
@@ -65,12 +65,11 @@ const verifyBooking = async items => {
   // get name of the button
   // var whichGroup = event.target.name;
   var typeOfGroup = callCalendarButton.getAttribute('name');
-  console.log(typeOfGroup); // Verify
-  
+  // console.log(typeOfGroup); // Verify
   
   // search the array for that name
   const carnivalGroup = await items.find(item => item.name === typeOfGroup);
-  console.log(carnivalGroup); // Verify
+  // console.log(carnivalGroup); // Verify
   if (carnivalGroup && carnivalGroup.booked) calendarAux();
 }
 // Verify if event was already booked.
