@@ -11,10 +11,31 @@
   padding: 1em;
 }
 
+.maps-view {
+  /* 
+    Responsive Maps iframe 
+    Author: https://gist.github.com/magnetikonline/8487169
+  */
+  height: 0;
+	overflow: hidden;
+	padding-bottom: 60%; /* desired aspect ratio */
+	position: relative;
+
+}
+
 .maps-view iframe {
-  padding: 1em;
-  width: 400px;
-  height: 300px;
+  padding: 3em 0;
+
+  /* 
+    Responsive Maps iframe 
+    Author: https://gist.github.com/magnetikonline/8487169
+  */
+  border: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .register-start {
@@ -28,5 +49,14 @@
 
 .register-form {
   padding-top: 3em;
-  padding-bottom: 10em;
+  padding-bottom: 5em;
+}
+
+.termos-button {
+  margin-left: 2em;
+}
+
+.termos object {
+  height: 20em;
+  width: 100%;
 }
