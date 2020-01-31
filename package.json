@@ -17,7 +17,7 @@
     "url": "https://github.com/thiagojacinto/bootstrap-review-project-2020/issues"
   },
   "homepage": "https://github.com/thiagojacinto/bootstrap-review-project-2020#readme",
-  "dependencies": {
+  "devDdependencies": {
     "bootstrap": "^4.4.1"
   }
 }
